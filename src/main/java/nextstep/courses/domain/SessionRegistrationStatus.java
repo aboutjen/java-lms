@@ -17,6 +17,18 @@ public class SessionRegistrationStatus {
         this.students = students;
     }
 
+    public SessionStatus getSessionStatus(){
+        return sessionStatus;
+    }
+
+    public int getMaxStudents(){
+        return maxStudents;
+    }
+
+    public List<NsUser> getStudents(){
+        return students;
+    }
+
     public void addStudents(List<NsUser> students){
         validateSessionStatus();
         validateMaxStudents(maxStudents, students);

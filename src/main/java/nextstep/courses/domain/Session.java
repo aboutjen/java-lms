@@ -29,6 +29,34 @@ public class Session {
         return id;
     }
 
+    public Period getPeriod() {
+        return period;
+    }
+
+    public String getImageUrl(){
+        return imageUrl;
+    }
+
+    public boolean getIsFree(){
+        return isFree;
+    }
+
+    public SessionRegistrationStatus getSessionRegistrationStatus(){
+        return sessionRegistrationStatus;
+    }
+
+    public Long getCreatorId(){
+        return creatorId;
+    }
+
+    public LocalDateTime getCreatedAt(){
+        return createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt(){
+        return updatedAt;
+    }
+
     public boolean canRegisteringStatus() {
         return sessionRegistrationStatus.canRegisteringStatus();
     }
